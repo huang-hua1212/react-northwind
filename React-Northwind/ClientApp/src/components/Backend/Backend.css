@@ -1,0 +1,19 @@
+﻿@media (max-width: 990px) {
+    .backendSidebar {
+        display: none
+    }
+    .backendLayout #contentTbl {
+        margin-left: 0;
+        width: 100%;
+        /*display: flex;*/
+        /*justify-content: center;*/
+        text-align: center;
+    }
+}
+.backendSidebar {
+    width: 20%;
+}
+.backendSidebar + div {
+    margin-left: 2%;
+    width: 77%;
+}
