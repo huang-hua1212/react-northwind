@@ -5,13 +5,14 @@ export class Counter extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { currentCount: 0 };
+    this.state = { currentCount: 0, styleTest:  "red" };
     this.incrementCounter = this.incrementCounter.bind(this);
   }
 
   incrementCounter() {
     this.setState({
-      currentCount: this.state.currentCount + 1
+        currentCount: this.state.currentCount + 1,
+        styleTest: 'yellow'
     });
   }
 
@@ -20,8 +21,8 @@ export class Counter extends Component {
       <div>
         <h1>Counter</h1>
 
-        <p>This is a simple example of a React component.</p>
-
+            <p>This is a simple example of a React component.</p>
+            <button style={{ background: this.state.styleTest }}>test</button>
         <p aria-live="polite">Current count: <strong>{this.state.currentCount}</strong></p>
 
         <button className="btn btn-primary" onClick={this.incrementCounter}>Increment</button>

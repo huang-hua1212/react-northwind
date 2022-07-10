@@ -6,6 +6,7 @@ import { Customers } from "./Customers";
 import { Products } from "./Products";
 import { Orders } from "./Orders";
 import { Suppliers } from "./Suppliers";
+//import { Login } from "./Login";
 
 
 import "./Backend.css";
@@ -33,6 +34,7 @@ export class Backend extends Component {
                             <Route path={`${path}/products`} component={Products} />
                             <Route path={`${path}/orders`} component={Orders} />
                             <Route path={`${path}/suppliers`} component={Suppliers} />
+                            {/*<Route path={`${path}/login`} component={Login} />*/}
                         </div>
                     </div>
                 </Layout>

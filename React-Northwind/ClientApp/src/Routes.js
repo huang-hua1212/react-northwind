@@ -13,6 +13,7 @@ import { Orders as B_Orders } from './components/Backend/Orders';
 import { Customers as B_Customers } from './components/Backend/Customers';
 import { Products as B_Products } from './components/Backend/Products';
 import { Suppliers as B_Suppliers } from './components/Backend/Suppliers';
+import { Login as B_Login } from './components/Backend/Login';
 
 
 const routes = [
@@ -79,6 +80,11 @@ const routes = [
                 breadcrumbName: 'Backend_Suppliers',
             },
         ]
+    },
+    {
+        path: '/login',
+        component: B_Login,
+        breadcrumbName: 'Backend_Login',
     },
     {
         path: '/',
